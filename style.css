@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'outfit',serif;
+}
+:root{
+    --body-bg:hsl(212, 45%, 89%);
+    --fontcolor-for-p-link:hsl(220, 15%, 55%);
+    --bg-for-card: hsl(0, 0%, 100%);
+    --fontsize-for-p:15px;
+    --fontweight-for-p:400;
+    --fontweight-for-other:700;
+    --img-height-width: 18em;
+    --border-redius:15px;
+    --copywrite-bg-color: hsl(218, 44%, 22%);
+    --copywrite-height:5em;
+    --copywrite-width:17em;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: var(--body-bg);
+}
+img{
+    height: var(--img-height-width);
+    width: var(--img-height-width);
+    margin: calc((15em - 14em)*2);
+    border-radius: var(--border-redius);
+}
+a{
+    text-decoration: none;
+    color: var(--fontcolor-for-p-link);
+    font-size: var(--fontsize-for-p);
+    font-weight: var(--fontweight-for-p);
+}
+p{
+    color: var(--fontcolor-for-p-link);
+    font-size: var(--fontsize-for-p);
+    font-weight: var(--fontweight-for-p);
+}
+.CARD{
+    background: var(--bg-for-card);
+    height: fit-content;
+    border-radius: var(--border-redius);
+    margin-top: 7em;
+}
+.TEXTCONTENT{
+    font-size: var(--fontweight-for-other);
+    margin-right: 2em;
+    margin-top: 0em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.POSITION{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.POSITION p span{
+    margin-left: 5em;
+}
+.COPYWRITE{
+    height: var(--copywrite-height);
+    width: var(--copywrite-width);
+    color: var(--fontcolor-for-p-link);
+    background: var(--copywrite-bg-color);
+}
